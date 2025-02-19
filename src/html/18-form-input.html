@@ -20,6 +20,7 @@
             id="userName"
             required
             placeholder="예)홍길동"
+            minlength="2"
           />
         </div>
         <div>
@@ -40,7 +41,52 @@
           <label for="userEmail">이메일</label>
           <input type="email" id="userEmail" required name="userEmail" />
         </div>
-        <input type="submit" value="전송" />
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" id="userPhone" required name="userPhone" />
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="HTML"
+            checked
+            name="classLikelion"
+            id="classHtml"
+          />
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="CSS"
+            name="classLikelion"
+            id="classCss"
+          />
+          <label for="classCss">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="JS" name="classLikelion" id="classJs" />
+          <label for="classJs">JS</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="classRoom10"
+            name="classRoom10"
+            id="classLikelion10"
+          /><label for="classLikelion10">회고10팀</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            value="classRoom11"
+            name="classRoom10"
+            id="classLikelion11"
+          /><label for="classLikelion11">회고11팀</label>
+        </div>
+        <div>
+          <input type="submit" value="전송" />
+        </div>
       </fieldset>
     </form>
   </body>
