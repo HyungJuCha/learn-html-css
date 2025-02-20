@@ -1,0 +1,24 @@
+:root {
+  font-size: clamp(12px, 3vw, 24px);
+}
+
+body {
+  font-family: 'SUIT, sans-serif';
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.size {
+  color: green;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+  /* font: 24px 'pretendard variable'; */
+}
