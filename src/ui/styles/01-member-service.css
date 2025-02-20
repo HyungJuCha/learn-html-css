@@ -1,0 +1,29 @@
+.member-service {
+  background-color: yellow;
+  /* font-variant: small-caps; */
+  text-transform: uppercase;
+  font:
+    1.125rem 'suit',
+    sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* a::before {
+  content: ': ';
+}
+
+a:first-child::before {
+  content: '';
+} */
+
+.item.first::before {
+  content: '';
+}
+
+.item::before {
+  content: ': ';
+}
