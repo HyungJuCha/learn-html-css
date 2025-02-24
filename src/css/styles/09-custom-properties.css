@@ -1,0 +1,13 @@
+/* 전역 변수 정의 */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+.container {
+  --secondary-color: #a6a9df;
+
+  h1 {
+    background-color: var(--secondary-color, #2ecc71);
+    /* 만약 변수의 이름이 변경됐을때 2순위 색을 지정하는 것 */
+  }
+}
