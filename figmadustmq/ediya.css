@@ -41,3 +41,63 @@ body {
   text-decoration: none;
   padding: 5px;
 }
+
+.icedlatte {
+  width: 359px;
+  height: 373px;
+  margin: 0;
+  border: 1px solid#333;
+  margin: 30px;
+  position: relative;
+  .x {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+.name {
+  width: 319px;
+  height: 54px;
+  margin: 30px 20px 0 20px;
+  border-bottom: 3px solid #333;
+
+  .krname {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+  .enname {
+    font-size: 0.875rem;
+    font-weight: 200;
+  }
+}
+.example {
+  margin: 6px 20px 0 20px;
+  font-size: 16px;
+  line-height: 1.5rem;
+  font-weight: normal;
+}
+.materials {
+  width: 357px;
+  height: 70px;
+  bottom: 0;
+  position: absolute;
+  font-size: 0.8125rem;
+  
+  
+
+  .left {
+    float: left;
+    margin: 6px 25px 0 40px;
+  }
+  .right {
+    float: left;
+    border-left: 2px solid #333;
+    margin: 6px 20px 6px 0;
+    span {
+      margin: 25px;
+    }
+  }
+}
