@@ -46,24 +46,27 @@ body {
   padding: 5px;
 }
 .menu-image {
-  width: 100%;
-  padding: 20px;
   text-align: center;
-  
+  margin: 10px;
 }
 .menu-item {
-  display: block;
+  display: inline-block;
   background: #f5f5f5;
-  width: 339px;
+  margin: 10px;
+  max-width: 339px;
   height: 373px;
-  margin: 20px;
+  width: 100%;
+
+  text-align: center;
   img {
     width: 204px;
     height: 293px;
+    margin: 0 auto;
+    display: block;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .menu {
     display: none;
   }
@@ -83,8 +86,6 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-  }
-  .menu-image1 {
   }
 }
 
