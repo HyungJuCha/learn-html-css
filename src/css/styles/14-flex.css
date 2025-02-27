@@ -1,0 +1,66 @@
+@import '/src/common/theme.css';
+html,
+body {
+  font-family: 'suit', sans-serif;
+}
+
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+.case-01 {
+  display: flex;
+  /* flex-direction: row; */
+  /* padding: 10px; */
+  border: 1px solid red;
+  inline-size: 622px;
+  block-size: 522px;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+  align-content: center;
+  /* flex-wrap: nowrap; */
+  gap: 20px 40px;
+  [class*='item'] {
+    /* margin-block: 10px; */
+    border: 1px solid #333;
+    background: var(--pastel-yellow);
+    /* inline-size: 100px;
+    block-size: 100px; */
+    text-align: center;
+    align-content: center;
+  }
+  .item1 {
+    /* inline-size: 200px; */
+    font-size: 48px;
+  }
+  .item2 {
+    font-size: 30px;
+  }
+}
+
+.case-02 {
+  border: 1px solid green;
+  inline-size: 502px;
+  display: flex;
+  flex-flow: row nowrap;
+
+  [class^='item'] {
+    border: 1px solid currentColor;
+    /* width: 100px;
+    inline-size: 100px;
+    height: 100px;
+    block-size: 100px; */
+    text-align: center;
+    align-content: center;
+    /* flex-basis: 200px;
+    flex-shrink: 1;
+    flex-grow: 0; */
+    flex: 0 1 200px;
+
+    &:nth-child(even) {
+      order: -1;
+    }
+  }
+}

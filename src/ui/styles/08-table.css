@@ -1,0 +1,58 @@
+@import '/src/common/best-reset.css';
+@import '/src/common/theme.css';
+
+.table-wrapper {
+  margin-inline: 20px;
+  margin-block: 100px;
+  block-size: 500px;
+  overflow: auto;
+}
+.table-styling {
+  border: 1px solid currentColor;
+  inline-size: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  /* position: relative; */
+
+  caption {
+    font-size: 2rem;
+    line-height: 1.5;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+  }
+  thead {
+    position: sticky;
+    top: 0;
+  }
+
+  td {
+    text-align: center;
+  }
+  th,
+  td {
+    padding: 10px;
+    /* border: 1px solid currentColor; */
+  }
+  thead tr,
+  tfoot tr {
+    background: #333;
+    color: #fff;
+  }
+  tbody tr:nth-child(even) {
+    background: var(--pastel-gray);
+  }
+
+  .number {
+    inline-size: 10%;
+  }
+  .name {
+    inline-size: 20%;
+  }
+  .email {
+    inline-size: 40%;
+  }
+  .phone {
+    inline-size: 30$;
+  }
+}
