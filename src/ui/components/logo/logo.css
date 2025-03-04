@@ -1,0 +1,25 @@
+/* 로고 컴포넌트 (svg 요소) */
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 로고 컴포넌트 (svg 요소) */
+.logo {
+  svg {
+    display: block;
+    width: 100%;
+    inline-size: 100%; /*너비에 따라 높이 알아서 조절*/
+    height: auto;
+    block-size: auto; /*높이에 따라 너비 알아서 조절*/
+  }
+}
+
+/* 로고 컴포넌트 (img 요소) */
+.logo {
+  --size: 14.375rem;
+
+  display: block;
+  width: var(--size, 14.375rem);
+  inline-size: var(--size, 14.375rem);
+}
