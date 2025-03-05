@@ -1,0 +1,31 @@
+@import '/src/ui/components/avatar/avatar.css';
+@import '/src/common/theme.css';
+@import '/src/common/modern-reset.css';
+
+.img-avatar,
+.state {
+  position: initial !important;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border: 1px solid gray;
+  padding: 2rem;
+  justify-items: center;
+}
+
+.img-avatar {
+  margin-bottom: 20px;
+  margin-inline: auto;
+
+  display: grid;
+  img,
+  figcaption {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  figcaption {
+    place-self: end;
+  }
+}
