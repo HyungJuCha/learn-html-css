@@ -1,0 +1,37 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+body {
+  margin: 20px;
+}
+.select-container {
+  display: inline-grid;
+  border: 1px solid gray;
+  border-radius: 8px;
+
+  svg,
+  select {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  svg {
+    margin: 0 0.5em;
+    pointer-events: none;
+  }
+
+  select {
+    border: 0;
+    background: none;
+    appearance: none;
+    padding: 12px 40px;
+  }
+  .icon-global {
+    place-self: center start;
+    order: 1;
+  }
+  .icon-triangle {
+    place-self: center end;
+    order: 1;
+  }
+}
